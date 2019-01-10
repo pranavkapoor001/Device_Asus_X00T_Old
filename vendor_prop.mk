@@ -284,6 +284,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.usb.firstboot.config=diag,serial_cdev,rmnet,adb
 
+#enable headset calibration
+PRODUCT_PROPERTY_OVERRIDES += \
+audio.volume.headset.gain.depcal=true
+
+#enable dualmic fluence for voice communication
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.audio.fluence.voicecomm=true
+
 # WFD display
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1 \
