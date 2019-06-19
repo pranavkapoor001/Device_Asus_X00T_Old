@@ -498,4 +498,8 @@
     <!-- Whether the display blanks itself when transition from a doze to a non-doze state -->
     <bool name="config_displayBlanksAfterDoze">true</bool>
 
+    <!-- Max visible notification icons -->
+    <integer name="config_maxVisibleNotificationIcons">8</integer>
+    <integer name="config_maxVisibleNotificationIconsWhenDark">9</integer>
+
 </resources>
