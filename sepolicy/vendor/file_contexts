@@ -63,3 +63,6 @@
 
 # FPS Info
 /sys/devices/virtual/graphics/fb0/measured_fps                              u:object_r:sysfs_fps:s0
+
+# Touch HAL
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.X00T      u:object_r:hal_lineage_touch_default_exec:s0
