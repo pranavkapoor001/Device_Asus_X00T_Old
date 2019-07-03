@@ -298,6 +298,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.hwc.enable_vds=1 \
     persist.sys.wfd.virtual=0
 
+#enable AAC frame ctl for A2DP sinks
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.vendor.bt.aac_frm_ctl.enabled=true
+
 # Dpi
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=384
