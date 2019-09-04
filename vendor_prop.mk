@@ -50,6 +50,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.bluetooth.wipower=true \
     vendor.bluetooth.soc=cherokee \
     vendor.qcom.bluetooth.soc=cherokee
+    persist.bluetooth.bluetooth_audio_hal.disabled=true \
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
