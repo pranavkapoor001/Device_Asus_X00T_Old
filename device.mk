@@ -238,6 +238,14 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
     android.hidl.manager@1.0-java
 
+# IMS-packages
+PRODUCT_PACKAGES += \
+    ims-ext-common_system
+
+PRODUCT_BOOT_JARS += \
+    ims-ext-common_system
+
+
 # IMS
 PRODUCT_PACKAGES += \
     ims-ext-common \
@@ -245,7 +253,7 @@ PRODUCT_PACKAGES += \
 	qti-telephony-hidl-wrapper \
 	qti_telephony_hidl_wrapper.xml \
 	qti-telephony-utils \
- 	qti_telephony_utils.xml 
+ 	qti_telephony_utils.xml
 
 # IPv6
 PRODUCT_PACKAGES += \
