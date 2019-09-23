@@ -964,6 +964,7 @@ service profiler_daemon /system/bin/profiler_daemon
 service charger /charger
     class charger
     group system graphics
+    capabilities SYS_BOOT
     seclabel u:r:healthd:s0
 
 service vendor.ssr_diag /vendor/bin/ssr_diag
