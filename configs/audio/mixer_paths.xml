@@ -2604,4 +2604,15 @@
         <ctl name="MultiMedia2 Mixer USB_AUDIO_TX" value="1" />
     </path>
 
+    <path name="unprocessed-stereo-mic">
+        <path name="voice-rec-dmic-ef" />
+    </path>
+
+     <path name="unprocessed-quad-mic">
+        <path name="quad-mic" />
+    </path>
+
+     <path name="unprocessed-headset-mic">
+        <path name="headset-mic" />
+    </path>
 </mixer>
