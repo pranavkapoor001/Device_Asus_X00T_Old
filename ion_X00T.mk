@@ -20,7 +20,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/ion/config/common_full_phone.mk)
+
+# Bootanimation Res
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+
+# Ion Official
+ION_BUILD_TYPE := OFFICIAL
+ION_RELEASE_TYPE := Release
+
+# Ion Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.ion.maintainer = Pranavkpr
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -31,7 +45,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := X00T
 PRODUCT_MANUFACTURER := asus
-PRODUCT_NAME := lineage_X00T
+PRODUCT_NAME := ion_X00T
 PRODUCT_MODEL := ASUS_X00TD
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
