@@ -211,20 +211,108 @@ service vendor.cdsprpcd /vendor/bin/cdsprpcd
    group system
    disabled
 
-service vendor.imsqmidaemon /vendor/bin/imsqmidaemon
-    class main
-    user radio
-    socket ims_qmid stream 0660 system radio
-    group radio log diag
+#
+#service usf_tester /system/vendor/bin/usf_tester
+#    user system
+#    group system inet
+#    disabled
+#
+#service usf_epos /system/vendor/bin/usf_epos
+#    user system
+#    group system inet
+#    disabled
+#
+#service usf_gesture /system/vendor/bin/usf_gesture
+#    user system
+#    group system inet
+#    disabled
+#
 
-# imsdatadaemon starts with root and UID will be downgraded to SYSTEM.
-service vendor.imsdatadaemon /vendor/bin/imsdatadaemon
-    class main
-    user radio
-    socket ims_datad stream 0660 system radio
-    group radio wifi inet log diag
-    disabled
+#service usf_sync_gesture /system/vendor/bin/usf_sync_gesture
+#    user system
+#    group system inet
+#    disabled
+#
 
+#service usf_p2p /system/vendor/bin/usf_p2p
+#    user system
+#    group system inet
+#    disabled
+#
+#service usf_hovering /system/vendor/bin/usf_hovering
+#    user system
+#    group system inet
+#    disabled
+#
+#service usf_proximity /system/vendor/bin/usf_proximity
+#    user system
+#    group system inet
+#    disabled
+#
+#service usf-post-boot /system/vendor/bin/sh /system/etc/usf_post_boot.sh
+#    class late_start
+#    user root
+#    disabled
+#    oneshot
+#
+#on property:init.svc.bootanim=stopped
+#    start usf-post-boot
+#
+#
+#on boot
+#    insmod /system/lib/modules/adsprpc.ko
+#    insmod /system/lib/modules/mhi.ko
+## access permission for secure touch
+#    chmod 0660 /sys/devices/f9966000.i2c/i2c-1/1-004a/secure_touch_enable
+#    chmod 0440 /sys/devices/f9966000.i2c/i2c-1/1-004a/secure_touch
+#    chmod 0660 /sys/devices/f9966000.i2c/i2c-1/1-0020/secure_touch_enable
+#    chmod 0440 /sys/devices/f9966000.i2c/i2c-1/1-0020/secure_touch
+#    chown system drmrpc /sys/devices/f9966000.i2c/i2c-1/1-004a/secure_touch_enable
+#    chown system drmrpc /sys/devices/f9966000.i2c/i2c-1/1-004a/secure_touch
+#    chown system drmrpc /sys/devices/f9966000.i2c/i2c-1/1-0020/secure_touch_enable
+#    chown system drmrpc /sys/devices/f9966000.i2c/i2c-1/1-0020/secure_touch
+
+#
+#service mdm_helper /system/bin/mdm_helper
+#    class core
+#    onrestart setprop ro.service.mdm_helper_restarted "true"
+#    disabled
+#
+#service mdm_helper_proxy /system/bin/mdm_helper_proxy
+#    class core
+#    disabled
+#
+#service mdm_launcher /system/bin/sh /init.mdm.sh
+#    class main
+#    oneshot
+#
+#service qcamerasvr /system/bin/mm-qcamera-daemon
+#    class late_start
+#    user camera
+#    group camera system inet input graphics
+#
+# Stop mdm_helper_proxy in case of shutdown
+#on property:sys.shutdown.requested=*
+#    stop mdm_helper_proxy
+#
+# Stop mdm_helper_proxy on APQ target
+#on property:ro.radio.noril=yes
+#    stop mdm_helper_proxy
+#
+#on property:persist.airplane.mode.pwr.svg=enabled
+#    setprop ro.mdm_helper_proxy_req false
+#
+#on property:init.svc.ril-daemon=running
+#    setprop ro.mdm_helper_proxy_req true
+#
+## Start mdm_helper_proxy
+#on property:ro.mdm_helper_proxy_req=true
+#    start mdm_helper_proxy
+#
+## QCA1530 SoC core detect
+#service gnss-detect /system/vendor/bin/gnss.qca1530.sh detect
+#   class core
+#   oneshot
 service energy-awareness /vendor/bin/energy-awareness
     class main
     user system
@@ -233,9 +321,6 @@ service energy-awareness /vendor/bin/energy-awareness
 
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
-
-on property:vendor.ims.QMI_DAEMON_STATUS=1
-    start vendor.imsdatadaemon
 
 on property:vold.decrypt=trigger_restart_framework
    start cnss_diag
@@ -246,20 +331,7 @@ service cnss_diag /vendor/bin/cnss_diag -q -f -t HELIUM
    group system wifi inet sdcard_rw media_rw diag
    oneshot
 
-service vendor.ims_rtp_daemon /vendor/bin/ims_rtp_daemon
-   class main
-   user radio
-   group radio vendor_qti_diag inet log
-
-service vendor.imsrcsservice /vendor/bin/imsrcsd
-   class main
-   user radio
-   group radio diag inet log wakelock
-
-on property:vendor.ims.DATA_DAEMON_STATUS=1
-    restart vendor.ims_rtp_daemon
-
-service ppd /vendor/bin/mm-pp-dpps
+service ppd /system/vendor/bin/mm-pp-dpps
     class late_start
     user system
     group system graphics
