@@ -237,6 +237,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.hwc.enable_vds=1 \
     persist.sys.wfd.virtual=0
 
+# Dpi
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.lcd_density=384
+
 # ZRAM disk
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.config.zram=true
