@@ -1348,10 +1348,12 @@ vendor/bin/thermal-engine
 -vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
 
-# Time services
--vendor/app/TimeService/TimeService.apk
-vendor/bin/time_daemon
-vendor/lib64/libtime_genoff.so
+# Time services - From Nokia DRG - B2N_00WW_FIH-user-10-QKQ1.190828.002-00WW_4_040-release-keys
+-vendor/app/TimeService/TimeService.apk|4a37afd1395758d946580af184a738e3c657b1e2
+vendor/bin/time_daemon|d5b056eeda44237d7511083b402b2747dbc707e1
+vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
+-vendor/lib/libtime_genoff.so|e858cc52e829af0a9e4b5a4c39bddef8cece4bd9
+-vendor/lib64/libtime_genoff.so|c8e0bbc9c6b7b5beddba43bc4125a9eaeba7c79f
 
 # Universal Bandwidth Compression (UBWC)
 vendor/lib/libstreamparser.so
