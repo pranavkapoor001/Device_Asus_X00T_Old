@@ -866,8 +866,10 @@ vendor/lib/libcpion.so
 vendor/lib64/libcpion.so
 vendor/lib/libwvhidl.so
 vendor/lib64/libwvhidl.so
-vendor/lib/liboemcrypto.so
-vendor/lib64/liboemcrypto.so
+
+# DRM (Widevine) - From lavender - 9-PKQ1.180904.001-V11.0.6.0
+vendor/lib/liboemcrypto.so|8ad53c1e62751c731a1837c29985d5dd8fff0de2
+vendor/lib64/liboemcrypto.so|db41cb588065ad0d92ac2a59db409420c021413b
 
 # ESE-Powermanager
 lib64/vendor.qti.esepowermanager@1.0.so
