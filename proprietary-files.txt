@@ -723,7 +723,7 @@ vendor/firmware/cpp_firmware_v1_12_0.fw
 # Charger
 vendor/bin/hvdcp_opti
 
-# CNE - From Nokia DRG - B2N_00WW_FIH-user-10-QKQ1.190828.002-00WW_4_040-release-keys
+# CNE - From Nokia DRG - 10-QKQ1.190828.002
 etc/cne/Nexus/ATT/ATT_profiles.xml|a0039cb3a4c5a4ca1adf897904b61c91e32d06f7|33e568627fd3f94dc45bca1c01ad10e6d8fb5b52
 etc/cne/Nexus/ROW/ROW_profiles.xml|e3907ff71cbbe0f1073ec1bf0223d26c8282aa35|238e785e9674b27c4b2365958d127533d7293132
 etc/cne/Nexus/VZW/VZW_profiles.xml|0d35b3266ea656d8868ae8f5d7e938f4859e9b0a|0f63b632e3a3f114def7aeadaabd13851c8ceec5
@@ -803,7 +803,7 @@ vendor/firmware/novatek_ts_fw_txd.bin
 # Display firmware (Synaptics)
 vendor/firmware/startup_fw_update.img
 
-# DPM - From Nokia DRG - B2N_00WW_FIH-user-10-QKQ1.190828.002-00WW_4_040-release-keys
+# DPM - From Nokia DRG - 10-QKQ1.190828.002
 product/bin/dpmd|49caa8e7d8af8055efdd7ebc0d7f7d67bc600041
 product/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
 product/etc/init/dpmd.rc|7f95195a89fddce06b93006a737701270e91f669
@@ -1133,7 +1133,7 @@ vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.color@1.2.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
-# QMI - From Nokia DRG - B2N_00WW_FIH-user-10-QKQ1.190828.002-00WW_4_040-release-keys
+# QMI - From Nokia DRG - 10-QKQ1.190828.002
 vendor/bin/irsc_util|4381ded94ac2775cf186c97c7ad6236eaa209eac
 vendor/bin/pd-mapper|6c9fd5b02c846efcee5f409e77e7ca3bb570b1c2
 vendor/lib/libdiag.so|5a713114cdfde2075d29a2e71ef268002430ba52
@@ -1188,7 +1188,7 @@ vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
-# Radio - From Nokia DRG - B2N_00WW_FIH-user-10-QKQ1.190828.002-00WW_4_040-release-keys
+# Radio - From Nokia DRG - 10-QKQ1.190828.002
 product/etc/permissions/qcrilhook.xml|ceb890ab3c1645aa0d0044abab1ba58c4097a991
 product/etc/permissions/telephonyservice.xml|a39eefcaf85fb8da60044fdbbcfddd95deb031c8
 product/framework/QtiTelephonyServicelibrary.jar|ea30b05eaad3ebee157421b3f31bf8585566b4cd
@@ -1269,7 +1269,7 @@ vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql|0571aacaf9fc
 -product/app/datastatusnotification/datastatusnotification.apk|9468f412b65cb3fc6bffb64816998a668010b572
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|a91bf48371b4bcca058a65bbfca2f4d331f9aa3b
 
-# Radio (IMS) - From Nokia DRG - B2N_00WW_FIH-user-10-QKQ1.190828.002-00WW_4_040-release-keys
+# Radio (IMS) - From Nokia DRG - 10-QKQ1.190828.002
 etc/permissions/com.qualcomm.qti.imscmservice.xml|db25ef24f1937366d58a53b4f4b8923bc9e98d2d
 lib/libdiag_system.so|fae3701605925188b757b501473ad8e6f4e06674
 lib64/libdiag_system.so|7c57857c5c529490d194516d12ace122d120465e
@@ -1394,7 +1394,7 @@ vendor/bin/thermal-engine
 -vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
 
-# Time services - From Nokia DRG - B2N_00WW_FIH-user-10-QKQ1.190828.002-00WW_4_040-release-keys
+# Time services - From Nokia DRG - 10-QKQ1.190828.002
 -vendor/app/TimeService/TimeService.apk|4a37afd1395758d946580af184a738e3c657b1e2
 vendor/bin/time_daemon|d5b056eeda44237d7511083b402b2747dbc707e1
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
