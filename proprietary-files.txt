@@ -1052,19 +1052,21 @@ vendor/lib64/libkeymasterutils.so
 # Keystore
 vendor/lib64/hw/keystore.sdm660.so
 
-# Listen - from DRG - QKQ1.190828.002
-vendor/lib/hw/sound_trigger.primary.sdm660.so|4b987886ad21686783900e61bd2ee4d82f522934
-vendor/lib/libadpcmdec.so|6e9be864a1380e099a2d68237e13a724f3143314
-vendor/lib/libgcs-calwrapper.so|edcccf23d050944417e2902e32ca0513168791cb
-vendor/lib/libgcs-ipc.so|a4f1f1a848f3ed8634673ef463499bbc7facc445
-vendor/lib/libgcs-osal.so|dfae7d1bb15b7bd19fef7427f0a6f6df28d5d30a
-vendor/lib/libgcs.so|4fa806f2bb8708b341f0cfe3a9609387350ceefb
-vendor/lib/libsmwrapper.so|c12725b40bc853cccbf1f489481892aa5bfb629c
-vendor/lib64/hw/sound_trigger.primary.sdm660.so|1a9296f93430e78208410f3019462ad910f8ab1f
-vendor/lib64/libgcs-calwrapper.so|a899242a79a451dab37b7127726ecb3da705128b
-vendor/lib64/libgcs-ipc.so|6ad698d11a29fe3f139e6d1c30741e823cdb62be
-vendor/lib64/libgcs-osal.so|5eca0a8d8ea32505d5b8d69b3e13bf640b34976a
-vendor/lib64/libgcs.so|d8125159e811541a10f800b289dcdc2a7fcb28ad
+# Listen - from LA.UM.7.2.r1-06900-sdm660.0
+vendor/lib/hw/sound_trigger.primary.sdm660.so|bd7ce820f661e269dbb7ff68a7123f0247e225bc
+vendor/lib/libadpcmdec.so|7c12a153200fd2e9f1f6139fcf40beee1a96f48d
+vendor/lib/libgcs-calwrapper.so|79f99e29bf13b21cfa356cd805f363cc19efc59e
+vendor/lib/libgcs-ipc.so|6028691d48595aa9037b75aa731c0a05472bf2e2
+vendor/lib/libgcs-osal.so|302b254ab3afc2f088bdb9a0c8564055b4eca4af
+vendor/lib/libgcs.so|9357ae12df1096f478df6488a9199ab2baf41d45
+vendor/lib/libsmwrapper.so|05c0a44547291719a32a52fb8db102c6d19e9315
+vendor/lib64/hw/sound_trigger.primary.sdm660.so|f8626e5c30047a73373b64e44a9ea02886354844
+vendor/lib64/libgcs-calwrapper.so|8551451d41e218a5443efc2dc128277fe9741e0c
+vendor/lib64/libgcs-ipc.so|027147c87f15a8cb2e5f54e8d8e56d33b9476e47
+vendor/lib64/libgcs-osal.so|d70699bde8fe27c77bc6d858ff4cd5137c5ed36b
+vendor/lib64/libgcs.so|89b765782c7a4d935bce8954e8161d0f7ab07c50
+vendor/lib/vendor.qti.voiceprint@1.0.so
+vendor/lib64/vendor.qti.voiceprint@1.0.so
 
 # Media - from DRG - QKQ1.190828.002
 vendor/lib/libAlacSwDec.so|bca4278cb74a63772a0fc369480b5d9814063d9b
