@@ -104,7 +104,6 @@ vendor/lib64/soundfx/libqcompostprocbundle.so
 vendor/lib64/soundfx/libqcomvoiceprocessing.so
 vendor/lib64/soundfx/libvolumelistener.so
 vendor/lib64/soundfx/libaudiopreprocessing.so
-vendor/lib64/soundfx/libqcreverb.so
 
 # Audio ACDB
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
@@ -1213,8 +1212,8 @@ vendor/bin/port-bridge|8aa211875df908f580e4f0da1c66db1d4e92c274
 vendor/bin/qti|782cc0d5d381f5e0555d130351c65b049aa649b8
 vendor/bin/rmt_storage|df220d67c9e76e518a9776247683bc5feae93609
 vendor/bin/tftp_server|3ea8b4c05df7d9b8c21374cecfa92d62d8b236b6
-vendor/etc/data/dsi_config.xml|59728e03a09db35ffc27fa122ab65cbe174bf0e1
-vendor/etc/data/netmgr_config.xml|736bd3ff61092821480659323a4a1746750acfef
+vendor/etc/data/dsi_config.xml|1e1667f631d81a2d3153b5002b9012c4bc7db393
+vendor/etc/data/netmgr_config.xml|dc7c0033a3d563fd008c18761d2bc7d025bac5cf
 vendor/etc/init/dataadpl.rc|cd4907d9bfd438fe5f5c86f5d6cec590ac0bac2a
 vendor/etc/init/dataqti.rc|6abfd1a850d782adbbb6f42c9d8ca870036b2ad1
 vendor/etc/init/netmgrd.rc|fd3457c69a9fab11b87d0d1b494188fe089684cd
