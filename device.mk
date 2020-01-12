@@ -168,14 +168,8 @@ PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0_32 \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
-    libxml2 
-
-# Google Camera
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/permissions/privapp-permissions-gcam.xml:system/etc/permissions/privapp-permissions-gcam.xml
-
-PRODUCT_PACKAGES += \
-    GoogleCamera
+    libxml2 \
+    Snap
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
