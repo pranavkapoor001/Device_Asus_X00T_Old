@@ -64,9 +64,12 @@ vendor/lib/libadm.so
 vendor/lib/libaudcal.so
 vendor/lib/libaudioalsa.so
 vendor/lib/libaudioparsers.so
+-vendor/lib/libaudio_log_utils.so|c0187996e4aa81683518645d1e1931afea5491de
 vendor/lib/libdrc.so
 vendor/lib/libqtigef.so
+vendor/lib/libtinycompress.so|9a851877b2ad6b256a377a0c63ea181ac6a0293d
 vendor/lib/libsurround_3mic_proc.so
+vendor/lib/hw/audio.primary.sdm660.so|8f442f3181307b492b370143914e9c1ae107f786
 vendor/lib/soundfx/libasphere.so|b1b26f99d9fbfe75f109349de5505ca39ccd4c8c
 vendor/lib/soundfx/libqcbassboost.so|73339450a42b598a3c13e67b3d4a2266d986fea2
 vendor/lib/soundfx/libqcreverb.so|eb437cd5e264b1adb4546c6a5617c5da17be5839
@@ -90,7 +93,10 @@ vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
 vendor/lib64/libaudioalsa.so
 vendor/lib64/libaudioparsers.so
+-vendor/lib64/libaudio_log_utils.so|7200b1d05406530ef20fb8ac1bfd2b2e1845d0dd
 vendor/lib64/libqtigef.so
+vendor/lib64/libtinycompress.so|7af24c2e713747f0b1478f691504bfe27a1aec04
+vendor/lib64/hw/audio.primary.sdm660.so|20f89860922bf1edbca50a54eb341c95fdd91e96
 vendor/lib64/soundfx/libasphere.so|bd48aa3d7cf27bf3b12ce29f429b719383e104fc
 vendor/lib64/soundfx/libqcbassboost.so|8d14a19bff32a4d5f19b998076e7b6ee46787cdc
 vendor/lib64/soundfx/libqcreverb.so|f0b4ffbd5ad1c3031b2cf1cea96521bc87ce2d23
