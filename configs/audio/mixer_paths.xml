@@ -2038,6 +2038,14 @@
         <path name="headphones" />
     </path>
 
+    <path name="headphones-ce">
+        <path name="headphones" />
+    </path>
+
+    <path name="headphones-no-ce">
+        <path name="headphones" />
+    </path>
+
     <path name="true-native-mode">
     </path>
 
@@ -2113,6 +2121,16 @@
     <path name="speaker-and-headphones">
         <path name="headphones" />
         <path name="speaker" />
+    </path>
+
+    <path name="speaker-and-headphones-ce">
+        <path name="headphones-ce" />
+        <path name="speaker" />
+    </path>
+    
+    <path name="speaker-and-headphones-no-ce">
+    <path name="headphones-no-ce" />
+    <path name="speaker" />
     </path>
     
     <path name="speaker-and-headphones-hifi-filter">
