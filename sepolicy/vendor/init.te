@@ -17,5 +17,7 @@ allow init system_file:file mounton;
 allow init vendor_file:file { execute execute_no_trans };
 allow init vendor_toolbox_exec:file execute_no_trans;
 
+allow init sysfs_battery_supply:file { open write };
+
 dontaudit init nvram_btwifi:process noatsecure;
 dontaudit init domain:process noatsecure;
