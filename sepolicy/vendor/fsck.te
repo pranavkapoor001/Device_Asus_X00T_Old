@@ -1,0 +1,2 @@
+allow fsck mnt_vendor_file:dir getattr;
+allow fsck tmpfs:blk_file getattr;
