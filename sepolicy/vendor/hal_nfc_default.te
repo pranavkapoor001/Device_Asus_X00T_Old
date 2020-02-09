@@ -1,0 +1,2 @@
+allow hal_nfc_default default_android_hwservice:hwservice_manager add;
+allow hal_nfc_default default_android_hwservice:hwservice_manager find;

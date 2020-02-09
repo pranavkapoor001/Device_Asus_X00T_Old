@@ -8,5 +8,8 @@ allow hal_camera_default sysfs_kgsl:file { getattr open read };
 allow hal_camera_default camera_data_file:dir w_dir_perms;
 allow hal_camera_default camera_data_file:file create_file_perms;
 
+allow hal_camera_default diag_device:chr_file { ioctl open read write };
+allow hal_camera_default system_file:file { execute getattr open read };
+
 set_prop(hal_camera_default, vendor_camera_prop)
 get_prop(hal_camera_default, vendor_system_prop)

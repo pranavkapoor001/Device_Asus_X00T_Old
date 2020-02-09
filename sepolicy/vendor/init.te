@@ -4,5 +4,18 @@ allow init nvram_btwifi_exec:file { read getattr execute map open };
 allow init sysfs_mmc_host:file { setattr w_file_perms };
 allow init proc_swappiness:file w_file_perms;
 
+allow init hal_power_stats_hwservice:hwservice_manager add;
+allow init hidl_base_hwservice:hwservice_manager add;
+allow init hal_power_hwservice:hwservice_manager add;
+allow init qdisplay_service:service_manager find;
+allow init hal_lineage_livedisplay_hwservice:hwservice_manager add;
+allow init hal_perf_hwservice:hwservice_manager find;
+
+allow init hwservicemanager:binder { call transfer };
+allow init sysfs:file { open read };
+allow init system_file:file mounton;
+allow init vendor_file:file { execute execute_no_trans };
+allow init vendor_toolbox_exec:file execute_no_trans;
+
 dontaudit init nvram_btwifi:process noatsecure;
 dontaudit init domain:process noatsecure;
