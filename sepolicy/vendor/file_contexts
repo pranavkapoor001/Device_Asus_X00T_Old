@@ -41,6 +41,7 @@
 
 # Gestures
 /sys/kernel/touchpanel/dclicknode                                       u:object_r:sysfs:s0
+/sys/kernel/touchpanel/gesture_node                                     u:object_r:sysfs:s0
 
 # DRM
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.1-service.widevine    u:object_r:hal_drm_widevine_exec:s0
