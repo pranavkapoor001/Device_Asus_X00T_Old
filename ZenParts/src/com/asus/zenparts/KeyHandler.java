@@ -43,7 +43,7 @@ import android.service.notification.ZenModeConfig;
 import com.asus.zenparts.settings.DeviceSettings;
 import com.asus.zenparts.settings.ScreenOffGesture;
 import android.os.UserHandle;
-import com.android.internal.os.AlternativeDeviceKeyHandler;
+import com.android.internal.os.DeviceKeyHandler;
 import com.android.internal.util.ArrayUtils;
 import com.asus.zenparts.utils.ActionConstants;
 import com.asus.zenparts.utils.Action;
@@ -51,7 +51,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.text.TextUtils;
 
-public class KeyHandler implements AlternativeDeviceKeyHandler {
+public class KeyHandler implements DeviceKeyHandler {
 
     private static final String TAG = KeyHandler.class.getSimpleName();
     private static final int GESTURE_REQUEST = 1;
@@ -309,7 +309,7 @@ public class KeyHandler implements AlternativeDeviceKeyHandler {
 
         void observe() {
             mContext.getContentResolver().registerContentObserver(Settings.System.getUriFor(
-                    Settings.System.CUSTOM_DEVICE_PROXI_CHECK_ENABLED),
+                    Settings.System.DEVICE_PROXI_CHECK_ENABLED),
                     false, this);
             update();
         }
@@ -321,7 +321,7 @@ public class KeyHandler implements AlternativeDeviceKeyHandler {
 
         public void update() {
             mUseProxiCheck = Settings.System.getIntForUser(
-                    mContext.getContentResolver(), Settings.System.CUSTOM_DEVICE_PROXI_CHECK_ENABLED, 1,
+                    mContext.getContentResolver(), Settings.System.DEVICE_PROXI_CHECK_ENABLED, 1,
                     UserHandle.USER_CURRENT) == 1;
         }
 }

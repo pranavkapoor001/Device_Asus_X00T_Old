@@ -525,8 +525,8 @@
     <string name="config_SmartChargingResumeValue" translatable="false">0</string>
 
     <!-- ZenParts -->
-    <string name="config_alternativeDeviceKeyHandlerLib" translatable="false">/system/priv-app/ZenParts/ZenParts.apk</string>
-    <string name="config_alternativeDeviceKeyHandlerClass" translatable="false">com.asus.zenparts.KeyHandler</string>
+    <string name="config_deviceKeyHandlerLib" translatable="false">/system/priv-app/ZenParts/ZenParts.apk</string>
+    <string name="config_deviceKeyHandlerClass" translatable="false">com.asus.zenparts.KeyHandler</string>
 
     <!-- Disable rounded corners on windows to improve graphics performance -->
     <bool name="config_supportsRoundedCornersOnWindows">false</bool>
