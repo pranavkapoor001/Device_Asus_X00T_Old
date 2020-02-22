@@ -401,8 +401,8 @@ on post-fs-data
     chmod 0664 /sys/kernel/touchpanel/dclicknode
 
 # Permissions for Touch Gesture Mode
-    chown system system /sys/kernel/touchpanel/gesture_mode
-    chmod 0664 /sys/kernel/touchpanel/gesture_mode
+    chown system system /sys/kernel/touchpanel/gesture_node
+    chmod 0664 /sys/kernel/touchpanel/gesture_node
 
     # Create /data/time folder for time-services
     mkdir /data/vendor/time/ 0700 system system
