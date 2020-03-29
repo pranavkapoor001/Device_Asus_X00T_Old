@@ -1861,7 +1861,7 @@
     </path>
 
     <path name="speaker">
-        <!-- ctl name="TERT_MI2S_RX Channels" value="One" -->
+     <!--   <ctl name="TERT_MI2S_RX Channels" value="One" > -->
 	<!-- Huaqin add for config new audioboard xml by xudayi at 2018/03/05 start -->
         <!-- ctl name="RX2 MIX1 INP1" value="RX2" /-->
         <!-- ctl name="RDAC2 MUX" value="RX2" /-->
@@ -2038,14 +2038,6 @@
         <path name="headphones" />
     </path>
 
-    <path name="headphones-ce">
-        <path name="headphones" />
-    </path>
-
-    <path name="headphones-no-ce">
-        <path name="headphones" />
-    </path>
-
     <path name="true-native-mode">
     </path>
 
@@ -2121,16 +2113,6 @@
     <path name="speaker-and-headphones">
         <path name="headphones" />
         <path name="speaker" />
-    </path>
-
-    <path name="speaker-and-headphones-ce">
-        <path name="headphones-ce" />
-        <path name="speaker" />
-    </path>
-    
-    <path name="speaker-and-headphones-no-ce">
-    <path name="headphones-no-ce" />
-    <path name="speaker" />
     </path>
     
     <path name="speaker-and-headphones-hifi-filter">
@@ -2259,10 +2241,8 @@
     </path>
 
     <path name="speaker-dmic-endfire">
-        <path name="adc1" />
-        <ctl name="ADC3 Volume" value="6" />
-        <ctl name="DEC2 MUX" value="ADC2" />
-	<ctl name="ADC2 MUX" value="INP3" />
+        <ctl name="DEC1 MUX" value="DMIC2" />
+        <ctl name="DEC2 MUX" value="DMIC4" />
         <ctl name="INT3_MI2S_TX Channels" value="Two" />
     </path>
 
