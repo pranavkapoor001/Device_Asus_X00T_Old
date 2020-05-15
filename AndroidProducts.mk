@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ion_X00T.mk
+    $(LOCAL_DIR)/hentai_X00T.mk
 
 COMMON_LUNCH_CHOICES := \
-      ion_X00T-userdebug
+      hentai_X00T-userdebug
